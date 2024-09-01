@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>CPE - 初學攻略 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="基本架構1234567#include &lt;iostream&gt;int main()&#123;    &#x2F;&#x2F;內容    return 0;&#125;  你應該知道  讀取  std::cin&gt;&gt; scanf() getline() …   輸出  std::cout&lt;&lt; printf()   型別  int, long int, long long int, un">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CPE - 初學攻略">
+<meta property="og:url" content="http://example.com/2024/09/01/CPE-%E5%88%9D%E5%AD%B8%E6%94%BB%E7%95%A5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基本架構1234567#include &lt;iostream&gt;int main()&#123;    &#x2F;&#x2F;內容    return 0;&#125;  你應該知道  讀取  std::cin&gt;&gt; scanf() getline() …   輸出  std::cout&lt;&lt; printf()   型別  int, long int, long long int, un">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-09-01T05:41:42.000Z">
+<meta property="article:modified_time" content="2024-09-01T05:46:01.260Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/09/01/CPE-%E5%88%9D%E5%AD%B8%E6%94%BB%E7%95%A5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'CPE - 初學攻略',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-01 13:46:01'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CPE - 初學攻略</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-01T05:41:42.000Z" title="Created 2024-09-01 13:41:42">2024-09-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-01T05:46:01.260Z" title="Updated 2024-09-01 13:46:01">2024-09-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="CPE - 初學攻略"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="基本架構"><a href="#基本架構" class="headerlink" title="基本架構"></a>基本架構</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//內容</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="你應該知道"><a href="#你應該知道" class="headerlink" title="你應該知道"></a>你應該知道</h3><hr>
+<ul>
+<li><p>讀取</p>
+<ul>
+<li>std::cin&gt;&gt;</li>
+<li>scanf()</li>
+<li>getline()</li>
+<li>…</li>
+</ul>
+</li>
+<li><p>輸出</p>
+<ul>
+<li>std::cout&lt;&lt;</li>
+<li>printf()</li>
+</ul>
+</li>
+<li><p>型別</p>
+<ul>
+<li><em>int, long int, long long int, unsigned—</em></li>
+<li><em>double, float, short</em></li>
+<li><em>char, string</em></li>
+</ul>
+</li>
+<li><p>迴圈</p>
+<ul>
+<li><em>for loop</em></li>
+<li><em>while loop</em></li>
+<li><a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/cpp-recursion/"><em>Recursion</em></a></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.lssh.tp.edu.tw/~hlf/class-1/lang-c/c++file.htm">檔案操作</a></p>
+</li>
+<li><p>輸出</p>
+<hr>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">std::ifstream <span class="title">inputFile</span><span class="params">(<span class="string">&quot;input.txt&quot;</span>)</span></span>;</span><br><span class="line"><span class="keyword">if</span> (inputFile.<span class="built_in">is_open</span>()) &#123;</span><br><span class="line">    std::string line;				</span><br><span class="line">    <span class="keyword">while</span> (std::<span class="built_in">getline</span>(inputFile, line)) &#123;		</span><br><span class="line">        std::cout &lt;&lt; line &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">    inputFile.<span class="built_in">close</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>寫入</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">std::ofstream <span class="title">outputFile</span><span class="params">(<span class="string">&quot;output.txt&quot;</span>)</span></span>;</span><br><span class="line"><span class="keyword">if</span> (outputFile.<span class="built_in">is_open</span>()) &#123;</span><br><span class="line">outputFile &lt;&lt; <span class="string">&quot;Hello, File!&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">outputFile.<span class="built_in">close</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>容器</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">std::vector&lt;<span class="type">int</span>&gt; numbers;</span><br><span class="line">numbers.<span class="built_in">push_back</span>(<span class="number">1</span>);</span><br><span class="line">numbers.<span class="built_in">push_back</span>(<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>std::map 和 std::set：用於存儲關鍵字對應值和唯一元素。</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">std::map&lt;std::string, <span class="type">int</span>&gt; ageMap;</span><br><span class="line">ageMap[<span class="string">&quot;Alice&quot;</span>] = <span class="number">30</span>;</span><br><span class="line">ageMap[<span class="string">&quot;Bob&quot;</span>] = <span class="number">25</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>指標和引用</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">指標：變量的地址。</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> value = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span>* ptr = &amp;value;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>類和對象</p>
+<h3 id="c-是一個面向對象的語言，類和對象是其核心概念。類定義了對象的數據和行為。"><a href="#c-是一個面向對象的語言，類和對象是其核心概念。類定義了對象的數據和行為。" class="headerlink" title="c ++是一個面向對象的語言，類和對象是其核心概念。類定義了對象的數據和行為。"></a>c ++是一個面向對象的語言，類和對象是其核心概念。類定義了對象的數據和行為。</h3></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyClass</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        std::cout &lt;&lt; <span class="string">&quot;Hello, World!&quot;</span> &lt;&lt; std::endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    MyClass obj;</span><br><span class="line">    obj.<span class="built_in">display</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>模板</p>
+<h3 id="函數模板和類模板：用於創建通用的函數和類。"><a href="#函數模板和類模板：用於創建通用的函數和類。" class="headerlink" title="函數模板和類模板：用於創建通用的函數和類。"></a>函數模板和類模板：用於創建通用的函數和類。</h3></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">template &lt;typename T&gt;</span><br><span class="line">T add(T a, T b) &#123;</span><br><span class="line">    return a + b;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    std::cout &lt;&lt; add(2, 3) &lt;&lt; std::endl;     // 使用int</span><br><span class="line">    std::cout &lt;&lt; add(2.5, 3.5) &lt;&lt; std::endl; // 使用double</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="標準樣板函式庫-STL"><a href="#標準樣板函式庫-STL" class="headerlink" title="標準樣板函式庫(STL)"></a>標準樣板函式庫(STL)</h1><hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/09/01/CPE-%E5%88%9D%E5%AD%B8%E6%94%BB%E7%95%A5/">http://example.com/2024/09/01/CPE-%E5%88%9D%E5%AD%B8%E6%94%BB%E7%95%A5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/C/">C++</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/09/01/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%A7%8B"><span class="toc-number">1.</span> <span class="toc-text">基本架構</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%A0%E6%87%89%E8%A9%B2%E7%9F%A5%E9%81%93"><span class="toc-number">1.0.1.</span> <span class="toc-text">你應該知道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#c-%E6%98%AF%E4%B8%80%E5%80%8B%E9%9D%A2%E5%90%91%E5%B0%8D%E8%B1%A1%E7%9A%84%E8%AA%9E%E8%A8%80%EF%BC%8C%E9%A1%9E%E5%92%8C%E5%B0%8D%E8%B1%A1%E6%98%AF%E5%85%B6%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5%E3%80%82%E9%A1%9E%E5%AE%9A%E7%BE%A9%E4%BA%86%E5%B0%8D%E8%B1%A1%E7%9A%84%E6%95%B8%E6%93%9A%E5%92%8C%E8%A1%8C%E7%82%BA%E3%80%82"><span class="toc-number">1.0.2.</span> <span class="toc-text">c ++是一個面向對象的語言，類和對象是其核心概念。類定義了對象的數據和行為。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B8%E6%A8%A1%E6%9D%BF%E5%92%8C%E9%A1%9E%E6%A8%A1%E6%9D%BF%EF%BC%9A%E7%94%A8%E6%96%BC%E5%89%B5%E5%BB%BA%E9%80%9A%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B8%E5%92%8C%E9%A1%9E%E3%80%82"><span class="toc-number">1.0.3.</span> <span class="toc-text">函數模板和類模板：用於創建通用的函數和類。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A8%99%E6%BA%96%E6%A8%A3%E6%9D%BF%E5%87%BD%E5%BC%8F%E5%BA%AB-STL"><span class="toc-number">2.</span> <span class="toc-text">標準樣板函式庫(STL)</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/01/CPE-%E5%88%9D%E5%AD%B8%E6%94%BB%E7%95%A5/" title="CPE - 初學攻略">CPE - 初學攻略</a><time datetime="2024-09-01T05:41:42.000Z" title="Created 2024-09-01 13:41:42">2024-09-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/09/01/hello-world/" title="Hello World">Hello World</a><time datetime="2024-09-01T05:16:19.740Z" title="Created 2024-09-01 13:16:19">2024-09-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
